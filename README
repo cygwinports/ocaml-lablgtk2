@@ -1,0 +1,371 @@
+lablgtk2
+-------------------------------------------
+Objective Caml bindings for GTK2 and the GNOME 2.x libraries.
+
+Runtime requirements:
+  cygwin-1.5.19-4
+  gnome-panel-2.10.2-1
+  gtk2-x11-2.8.17-1
+  gtkglarea2-1.99.0-1
+  gtkspell-2.0.11-2
+  lablgl-1.00-1
+  libGL1-6.4.2-1
+  libGLU1-6.4.2-1
+  libglade2-2.5.1-1
+  libgnome2-2.14.1-1
+  libgnomecanvas2-2.14.0-1
+  libgnomeui2-2.14.1-1
+  libncurses8-5.5-2
+  librsvg2-2.14.3-1
+  ocaml-3.08.1-1
+
+Build requirements:
+(besides corresponding devel packages)
+  cygwin-1.5.19-4
+  binutils-20041229-1
+  cygport-0.1.92-1
+  gawk-3.1.5-2
+  gcc-core-3.4.4-1
+  make-3.80-1
+  pkg-config-0.20-1
+  sed-4.1.3-1
+  ocaml-3.08.1-1
+
+Canonical homepage:
+  http://wwwfun.kurims.kyoto-u.ac.jp/soft/olabl/lablgtk.html
+
+Canonical download:
+  http://wwwfun.kurims.kyoto-u.ac.jp/soft/olabl/dist/
+
+-------------------------------------------
+
+Build instructions:
+  unpack lablgtk2-2.6.0-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./lablgtk2-2.6.0-X.cygport all
+
+This will create:
+  /usr/src/lablgtk2-2.6.0-X-src.tar.bz2
+  /usr/src/lablgtk2-2.6.0-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/bin/gdk-pixbuf-mlsource.exe
+  /usr/bin/lablgladecc2
+  /usr/bin/lablgtk2
+  /usr/lib/ocaml/lablgtk2/gAction.cmi
+  /usr/lib/ocaml/lablgtk2/gAction.cmx
+  /usr/lib/ocaml/lablgtk2/gAction.ml
+  /usr/lib/ocaml/lablgtk2/gAction.mli
+  /usr/lib/ocaml/lablgtk2/gBin.cmi
+  /usr/lib/ocaml/lablgtk2/gBin.cmx
+  /usr/lib/ocaml/lablgtk2/gBin.ml
+  /usr/lib/ocaml/lablgtk2/gBin.mli
+  /usr/lib/ocaml/lablgtk2/gBroken.cmi
+  /usr/lib/ocaml/lablgtk2/gBroken.cmx
+  /usr/lib/ocaml/lablgtk2/gBroken.ml
+  /usr/lib/ocaml/lablgtk2/gBroken.mli
+  /usr/lib/ocaml/lablgtk2/gButton.cmi
+  /usr/lib/ocaml/lablgtk2/gButton.cmx
+  /usr/lib/ocaml/lablgtk2/gButton.ml
+  /usr/lib/ocaml/lablgtk2/gButton.mli
+  /usr/lib/ocaml/lablgtk2/gContainer.cmi
+  /usr/lib/ocaml/lablgtk2/gContainer.cmx
+  /usr/lib/ocaml/lablgtk2/gContainer.ml
+  /usr/lib/ocaml/lablgtk2/gContainer.mli
+  /usr/lib/ocaml/lablgtk2/gData.cmi
+  /usr/lib/ocaml/lablgtk2/gData.cmx
+  /usr/lib/ocaml/lablgtk2/gData.ml
+  /usr/lib/ocaml/lablgtk2/gData.mli
+  /usr/lib/ocaml/lablgtk2/gDraw.cmi
+  /usr/lib/ocaml/lablgtk2/gDraw.cmx
+  /usr/lib/ocaml/lablgtk2/gDraw.ml
+  /usr/lib/ocaml/lablgtk2/gDraw.mli
+  /usr/lib/ocaml/lablgtk2/gEdit.cmi
+  /usr/lib/ocaml/lablgtk2/gEdit.cmx
+  /usr/lib/ocaml/lablgtk2/gEdit.ml
+  /usr/lib/ocaml/lablgtk2/gEdit.mli
+  /usr/lib/ocaml/lablgtk2/gFile.cmi
+  /usr/lib/ocaml/lablgtk2/gFile.cmx
+  /usr/lib/ocaml/lablgtk2/gFile.ml
+  /usr/lib/ocaml/lablgtk2/gFile.mli
+  /usr/lib/ocaml/lablgtk2/gList.cmi
+  /usr/lib/ocaml/lablgtk2/gList.cmx
+  /usr/lib/ocaml/lablgtk2/gList.ml
+  /usr/lib/ocaml/lablgtk2/gList.mli
+  /usr/lib/ocaml/lablgtk2/gMain.cmi
+  /usr/lib/ocaml/lablgtk2/gMain.cmx
+  /usr/lib/ocaml/lablgtk2/gMain.ml
+  /usr/lib/ocaml/lablgtk2/gMain.mli
+  /usr/lib/ocaml/lablgtk2/gMenu.cmi
+  /usr/lib/ocaml/lablgtk2/gMenu.cmx
+  /usr/lib/ocaml/lablgtk2/gMenu.ml
+  /usr/lib/ocaml/lablgtk2/gMenu.mli
+  /usr/lib/ocaml/lablgtk2/gMisc.cmi
+  /usr/lib/ocaml/lablgtk2/gMisc.cmx
+  /usr/lib/ocaml/lablgtk2/gMisc.ml
+  /usr/lib/ocaml/lablgtk2/gMisc.mli
+  /usr/lib/ocaml/lablgtk2/gObj.cmi
+  /usr/lib/ocaml/lablgtk2/gObj.cmx
+  /usr/lib/ocaml/lablgtk2/gObj.ml
+  /usr/lib/ocaml/lablgtk2/gObj.mli
+  /usr/lib/ocaml/lablgtk2/gPack.cmi
+  /usr/lib/ocaml/lablgtk2/gPack.cmx
+  /usr/lib/ocaml/lablgtk2/gPack.ml
+  /usr/lib/ocaml/lablgtk2/gPack.mli
+  /usr/lib/ocaml/lablgtk2/gPango.cmi
+  /usr/lib/ocaml/lablgtk2/gPango.cmx
+  /usr/lib/ocaml/lablgtk2/gPango.ml
+  /usr/lib/ocaml/lablgtk2/gRange.cmi
+  /usr/lib/ocaml/lablgtk2/gRange.cmx
+  /usr/lib/ocaml/lablgtk2/gRange.ml
+  /usr/lib/ocaml/lablgtk2/gRange.mli
+  /usr/lib/ocaml/lablgtk2/gText.cmi
+  /usr/lib/ocaml/lablgtk2/gText.cmx
+  /usr/lib/ocaml/lablgtk2/gText.ml
+  /usr/lib/ocaml/lablgtk2/gText.mli
+  /usr/lib/ocaml/lablgtk2/gToolbox.cmi
+  /usr/lib/ocaml/lablgtk2/gToolbox.cmx
+  /usr/lib/ocaml/lablgtk2/gToolbox.ml
+  /usr/lib/ocaml/lablgtk2/gToolbox.mli
+  /usr/lib/ocaml/lablgtk2/gTree.cmi
+  /usr/lib/ocaml/lablgtk2/gTree.cmx
+  /usr/lib/ocaml/lablgtk2/gTree.ml
+  /usr/lib/ocaml/lablgtk2/gTree.mli
+  /usr/lib/ocaml/lablgtk2/gUtil.cmi
+  /usr/lib/ocaml/lablgtk2/gUtil.cmx
+  /usr/lib/ocaml/lablgtk2/gUtil.ml
+  /usr/lib/ocaml/lablgtk2/gUtil.mli
+  /usr/lib/ocaml/lablgtk2/gWindow.cmi
+  /usr/lib/ocaml/lablgtk2/gWindow.cmx
+  /usr/lib/ocaml/lablgtk2/gWindow.ml
+  /usr/lib/ocaml/lablgtk2/gWindow.mli
+  /usr/lib/ocaml/lablgtk2/gaux.cmi
+  /usr/lib/ocaml/lablgtk2/gaux.cmx
+  /usr/lib/ocaml/lablgtk2/gaux.ml
+  /usr/lib/ocaml/lablgtk2/gdk.cmi
+  /usr/lib/ocaml/lablgtk2/gdk.cmx
+  /usr/lib/ocaml/lablgtk2/gdk.ml
+  /usr/lib/ocaml/lablgtk2/gdk.mli
+  /usr/lib/ocaml/lablgtk2/gdkEnums.cmi
+  /usr/lib/ocaml/lablgtk2/gdkEnums.cmx
+  /usr/lib/ocaml/lablgtk2/gdkEnums.ml
+  /usr/lib/ocaml/lablgtk2/gdkEvent.cmi
+  /usr/lib/ocaml/lablgtk2/gdkEvent.cmx
+  /usr/lib/ocaml/lablgtk2/gdkEvent.ml
+  /usr/lib/ocaml/lablgtk2/gdkKeysyms.cmi
+  /usr/lib/ocaml/lablgtk2/gdkKeysyms.cmx
+  /usr/lib/ocaml/lablgtk2/gdkKeysyms.ml
+  /usr/lib/ocaml/lablgtk2/gdkPixbuf.cmi
+  /usr/lib/ocaml/lablgtk2/gdkPixbuf.cmx
+  /usr/lib/ocaml/lablgtk2/gdkPixbuf.ml
+  /usr/lib/ocaml/lablgtk2/gdkPixbuf.mli
+  /usr/lib/ocaml/lablgtk2/gdk_tags.h
+  /usr/lib/ocaml/lablgtk2/gdkpixbuf_tags.h
+  /usr/lib/ocaml/lablgtk2/gdkprivate-win32.h
+  /usr/lib/ocaml/lablgtk2/glGtk.cmi
+  /usr/lib/ocaml/lablgtk2/glGtk.cmx
+  /usr/lib/ocaml/lablgtk2/glGtk.ml
+  /usr/lib/ocaml/lablgtk2/glGtk.mli
+  /usr/lib/ocaml/lablgtk2/glade.cmi
+  /usr/lib/ocaml/lablgtk2/glade.cmx
+  /usr/lib/ocaml/lablgtk2/glade.ml
+  /usr/lib/ocaml/lablgtk2/glade.mli
+  /usr/lib/ocaml/lablgtk2/glib.cmi
+  /usr/lib/ocaml/lablgtk2/glib.cmx
+  /usr/lib/ocaml/lablgtk2/glib.ml
+  /usr/lib/ocaml/lablgtk2/glib.mli
+  /usr/lib/ocaml/lablgtk2/glib_tags.h
+  /usr/lib/ocaml/lablgtk2/gnoCanvas.cmi
+  /usr/lib/ocaml/lablgtk2/gnoCanvas.cmx
+  /usr/lib/ocaml/lablgtk2/gnoCanvas.ml
+  /usr/lib/ocaml/lablgtk2/gnoCanvas.mli
+  /usr/lib/ocaml/lablgtk2/gnoDruid.cmi
+  /usr/lib/ocaml/lablgtk2/gnoDruid.cmx
+  /usr/lib/ocaml/lablgtk2/gnoDruid.ml
+  /usr/lib/ocaml/lablgtk2/gnoDruid.mli
+  /usr/lib/ocaml/lablgtk2/gnomeCanvas.cmi
+  /usr/lib/ocaml/lablgtk2/gnomeCanvas.cmx
+  /usr/lib/ocaml/lablgtk2/gnomeCanvas.ml
+  /usr/lib/ocaml/lablgtk2/gnomeDruid.cmi
+  /usr/lib/ocaml/lablgtk2/gnomeDruid.cmx
+  /usr/lib/ocaml/lablgtk2/gnomeDruid.ml
+  /usr/lib/ocaml/lablgtk2/gnomeui_tags.h
+  /usr/lib/ocaml/lablgtk2/gobject.cmi
+  /usr/lib/ocaml/lablgtk2/gobject.cmx
+  /usr/lib/ocaml/lablgtk2/gobject.ml
+  /usr/lib/ocaml/lablgtk2/gobject.mli
+  /usr/lib/ocaml/lablgtk2/gobject_tags.h
+  /usr/lib/ocaml/lablgtk2/gpointer.cmi
+  /usr/lib/ocaml/lablgtk2/gpointer.cmx
+  /usr/lib/ocaml/lablgtk2/gpointer.ml
+  /usr/lib/ocaml/lablgtk2/gpointer.mli
+  /usr/lib/ocaml/lablgtk2/gtk.cmi
+  /usr/lib/ocaml/lablgtk2/gtk.cmx
+  /usr/lib/ocaml/lablgtk2/gtk.ml
+  /usr/lib/ocaml/lablgtk2/gtkBase.cmi
+  /usr/lib/ocaml/lablgtk2/gtkBase.cmx
+  /usr/lib/ocaml/lablgtk2/gtkBase.ml
+  /usr/lib/ocaml/lablgtk2/gtkBin.cmi
+  /usr/lib/ocaml/lablgtk2/gtkBin.cmx
+  /usr/lib/ocaml/lablgtk2/gtkBin.ml
+  /usr/lib/ocaml/lablgtk2/gtkBroken.cmi
+  /usr/lib/ocaml/lablgtk2/gtkBroken.cmx
+  /usr/lib/ocaml/lablgtk2/gtkBroken.ml
+  /usr/lib/ocaml/lablgtk2/gtkButton.cmi
+  /usr/lib/ocaml/lablgtk2/gtkButton.cmx
+  /usr/lib/ocaml/lablgtk2/gtkButton.ml
+  /usr/lib/ocaml/lablgtk2/gtkData.cmi
+  /usr/lib/ocaml/lablgtk2/gtkData.cmx
+  /usr/lib/ocaml/lablgtk2/gtkData.ml
+  /usr/lib/ocaml/lablgtk2/gtkEdit.cmi
+  /usr/lib/ocaml/lablgtk2/gtkEdit.cmx
+  /usr/lib/ocaml/lablgtk2/gtkEdit.ml
+  /usr/lib/ocaml/lablgtk2/gtkEnums.cmi
+  /usr/lib/ocaml/lablgtk2/gtkEnums.cmx
+  /usr/lib/ocaml/lablgtk2/gtkEnums.ml
+  /usr/lib/ocaml/lablgtk2/gtkFile.cmi
+  /usr/lib/ocaml/lablgtk2/gtkFile.cmx
+  /usr/lib/ocaml/lablgtk2/gtkFile.ml
+  /usr/lib/ocaml/lablgtk2/gtkInit.cmi
+  /usr/lib/ocaml/lablgtk2/gtkInit.cmo
+  /usr/lib/ocaml/lablgtk2/gtkInit.cmx
+  /usr/lib/ocaml/lablgtk2/gtkInit.ml
+  /usr/lib/ocaml/lablgtk2/gtkInit.o
+  /usr/lib/ocaml/lablgtk2/gtkList.cmi
+  /usr/lib/ocaml/lablgtk2/gtkList.cmx
+  /usr/lib/ocaml/lablgtk2/gtkList.ml
+  /usr/lib/ocaml/lablgtk2/gtkMain.cmi
+  /usr/lib/ocaml/lablgtk2/gtkMain.cmx
+  /usr/lib/ocaml/lablgtk2/gtkMain.ml
+  /usr/lib/ocaml/lablgtk2/gtkMenu.cmi
+  /usr/lib/ocaml/lablgtk2/gtkMenu.cmx
+  /usr/lib/ocaml/lablgtk2/gtkMenu.ml
+  /usr/lib/ocaml/lablgtk2/gtkMisc.cmi
+  /usr/lib/ocaml/lablgtk2/gtkMisc.cmx
+  /usr/lib/ocaml/lablgtk2/gtkMisc.ml
+  /usr/lib/ocaml/lablgtk2/gtkObject.cmi
+  /usr/lib/ocaml/lablgtk2/gtkObject.cmx
+  /usr/lib/ocaml/lablgtk2/gtkObject.ml
+  /usr/lib/ocaml/lablgtk2/gtkPack.cmi
+  /usr/lib/ocaml/lablgtk2/gtkPack.cmx
+  /usr/lib/ocaml/lablgtk2/gtkPack.ml
+  /usr/lib/ocaml/lablgtk2/gtkRange.cmi
+  /usr/lib/ocaml/lablgtk2/gtkRange.cmx
+  /usr/lib/ocaml/lablgtk2/gtkRange.ml
+  /usr/lib/ocaml/lablgtk2/gtkSignal.cmi
+  /usr/lib/ocaml/lablgtk2/gtkSignal.cmx
+  /usr/lib/ocaml/lablgtk2/gtkSignal.ml
+  /usr/lib/ocaml/lablgtk2/gtkSignal.mli
+  /usr/lib/ocaml/lablgtk2/gtkSpell.cmi
+  /usr/lib/ocaml/lablgtk2/gtkSpell.cmx
+  /usr/lib/ocaml/lablgtk2/gtkSpell.ml
+  /usr/lib/ocaml/lablgtk2/gtkSpell.mli
+  /usr/lib/ocaml/lablgtk2/gtkStock.cmi
+  /usr/lib/ocaml/lablgtk2/gtkStock.cmx
+  /usr/lib/ocaml/lablgtk2/gtkStock.ml
+  /usr/lib/ocaml/lablgtk2/gtkText.cmi
+  /usr/lib/ocaml/lablgtk2/gtkText.cmx
+  /usr/lib/ocaml/lablgtk2/gtkText.ml
+  /usr/lib/ocaml/lablgtk2/gtkThInit.cmo
+  /usr/lib/ocaml/lablgtk2/gtkThInit.ml
+  /usr/lib/ocaml/lablgtk2/gtkThread.cmi
+  /usr/lib/ocaml/lablgtk2/gtkThread.cmo
+  /usr/lib/ocaml/lablgtk2/gtkThread.cmx
+  /usr/lib/ocaml/lablgtk2/gtkThread.ml
+  /usr/lib/ocaml/lablgtk2/gtkThread.mli
+  /usr/lib/ocaml/lablgtk2/gtkThread.o
+  /usr/lib/ocaml/lablgtk2/gtkTree.cmi
+  /usr/lib/ocaml/lablgtk2/gtkTree.cmx
+  /usr/lib/ocaml/lablgtk2/gtkTree.ml
+  /usr/lib/ocaml/lablgtk2/gtkWindow.cmi
+  /usr/lib/ocaml/lablgtk2/gtkWindow.cmx
+  /usr/lib/ocaml/lablgtk2/gtkWindow.ml
+  /usr/lib/ocaml/lablgtk2/gtk_tags.h
+  /usr/lib/ocaml/lablgtk2/gtkgl_tags.h
+  /usr/lib/ocaml/lablgtk2/lablglade.a
+  /usr/lib/ocaml/lablgtk2/lablglade.cma
+  /usr/lib/ocaml/lablgtk2/lablglade.cmxa
+  /usr/lib/ocaml/lablgtk2/lablgnomecanvas.a
+  /usr/lib/ocaml/lablgtk2/lablgnomecanvas.cma
+  /usr/lib/ocaml/lablgtk2/lablgnomecanvas.cmxa
+  /usr/lib/ocaml/lablgtk2/lablgnomeui.a
+  /usr/lib/ocaml/lablgtk2/lablgnomeui.cma
+  /usr/lib/ocaml/lablgtk2/lablgnomeui.cmxa
+  /usr/lib/ocaml/lablgtk2/lablgtk.a
+  /usr/lib/ocaml/lablgtk2/lablgtk.cma
+  /usr/lib/ocaml/lablgtk2/lablgtk.cmxa
+  /usr/lib/ocaml/lablgtk2/lablgtkgl.a
+  /usr/lib/ocaml/lablgtk2/lablgtkgl.cma
+  /usr/lib/ocaml/lablgtk2/lablgtkgl.cmxa
+  /usr/lib/ocaml/lablgtk2/lablgtkspell.a
+  /usr/lib/ocaml/lablgtk2/lablgtkspell.cma
+  /usr/lib/ocaml/lablgtk2/lablgtkspell.cmxa
+  /usr/lib/ocaml/lablgtk2/lablgtktop.exe
+  /usr/lib/ocaml/lablgtk2/lablpanel.a
+  /usr/lib/ocaml/lablgtk2/lablpanel.cma
+  /usr/lib/ocaml/lablgtk2/lablpanel.cmxa
+  /usr/lib/ocaml/lablgtk2/lablrsvg.a
+  /usr/lib/ocaml/lablgtk2/lablrsvg.cma
+  /usr/lib/ocaml/lablgtk2/lablrsvg.cmxa
+  /usr/lib/ocaml/lablgtk2/liblablglade2.a
+  /usr/lib/ocaml/lablgtk2/liblablgnomecanvas.a
+  /usr/lib/ocaml/lablgtk2/liblablgnomeui.a
+  /usr/lib/ocaml/lablgtk2/liblablgtk2.a
+  /usr/lib/ocaml/lablgtk2/liblablgtkgl2.a
+  /usr/lib/ocaml/lablgtk2/liblablgtkspell.a
+  /usr/lib/ocaml/lablgtk2/liblablpanel.a
+  /usr/lib/ocaml/lablgtk2/liblablrsvg.a
+  /usr/lib/ocaml/lablgtk2/ml_gdk.h
+  /usr/lib/ocaml/lablgtk2/ml_gdkpixbuf.h
+  /usr/lib/ocaml/lablgtk2/ml_glib.h
+  /usr/lib/ocaml/lablgtk2/ml_gobject.h
+  /usr/lib/ocaml/lablgtk2/ml_gpointer.h
+  /usr/lib/ocaml/lablgtk2/ml_gtk.h
+  /usr/lib/ocaml/lablgtk2/ml_gtktree.h
+  /usr/lib/ocaml/lablgtk2/ml_gvaluecaml.h
+  /usr/lib/ocaml/lablgtk2/ml_pango.h
+  /usr/lib/ocaml/lablgtk2/panel.cmi
+  /usr/lib/ocaml/lablgtk2/panel.cmx
+  /usr/lib/ocaml/lablgtk2/panel.ml
+  /usr/lib/ocaml/lablgtk2/panel.mli
+  /usr/lib/ocaml/lablgtk2/panel_tags.h
+  /usr/lib/ocaml/lablgtk2/pango.cmi
+  /usr/lib/ocaml/lablgtk2/pango.cmx
+  /usr/lib/ocaml/lablgtk2/pango.ml
+  /usr/lib/ocaml/lablgtk2/pangoEnums.cmi
+  /usr/lib/ocaml/lablgtk2/pangoEnums.cmx
+  /usr/lib/ocaml/lablgtk2/pangoEnums.ml
+  /usr/lib/ocaml/lablgtk2/pango_tags.h
+  /usr/lib/ocaml/lablgtk2/propcc
+  /usr/lib/ocaml/lablgtk2/rsvg.cmi
+  /usr/lib/ocaml/lablgtk2/rsvg.cmx
+  /usr/lib/ocaml/lablgtk2/rsvg.ml
+  /usr/lib/ocaml/lablgtk2/rsvg.mli
+  /usr/lib/ocaml/lablgtk2/varcc
+  /usr/lib/ocaml/lablgtk2/win32.h
+  /usr/lib/ocaml/lablgtk2/wrappers.h
+  /usr/lib/ocaml/lablgtk2/xml_lexer.mli
+  /usr/share/doc/Cygwin/lablgtk2-2.6.0.README
+  /usr/share/doc/lablgtk2-2.6.0/COPYING
+  /usr/share/doc/lablgtk2-2.6.0/Changes
+  /usr/share/doc/lablgtk2-2.6.0/README
+
+------------------
+
+Port Notes:
+
+----- version 2.6.0-1 -----
+Version bump.
+
+----- version 2.4.0-3 -----
+Unofficial port with full GNOME libraries support (the current package
+in the distro, 2.4.0-2, includes only GTK bindings).
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
