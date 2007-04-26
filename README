@@ -3,20 +3,20 @@ lablgtk2
 Objective Caml bindings for GTK2 and the GNOME 2.x libraries.
 
 Runtime requirements:
-  cygwin-1.5.19-4
-  gnome-panel-2.10.2-1
-  gtk2-x11-2.8.17-1
+  cygwin-1.5.24-2
+  gdk-pixbuf2-2.10.9-1
+  glib2-2.12.9-1
+  gnome-panel-2.16.2-1
+  gtk2-x11-2.10.9-1
   gtkglarea2-1.99.0-1
   gtkspell-2.0.11-2
-  lablgl-1.00-1
-  libGL1-6.4.2-1
-  libGLU1-6.4.2-1
-  libglade2-2.5.1-1
-  libgnome2-2.14.1-1
+  lablgl-1.02-2
+  libglade2-2.6.0-1
+  libgnome2-2.16.0-1
   libgnomecanvas2-2.14.0-1
-  libgnomeui2-2.14.1-1
-  libncurses8-5.5-2
-  librsvg2-2.14.3-1
+  libgnomeui2-2.16.1-1
+  librsvg2-2.16.1-1
+  pango-1.14.10-1
   ocaml-3.08.1-1
 
 Build requirements:
@@ -40,22 +40,22 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack lablgtk2-2.6.0-X-src.tar.bz2
+  unpack lablgtk2-20060908-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./lablgtk2-2.6.0-X.cygport all
+  cygport ./lablgtk2-20060908-X.cygport all
 
 This will create:
-  /usr/src/lablgtk2-2.6.0-X-src.tar.bz2
-  /usr/src/lablgtk2-2.6.0-X.tar.bz2
+  /usr/src/lablgtk2-20060908-X-src.tar.bz2
+  /usr/src/lablgtk2-20060908-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary package:
 
   /usr/bin/gdk-pixbuf-mlsource.exe
-  /usr/bin/lablgladecc2
+  /usr/bin/lablgladecc2.exe
   /usr/bin/lablgtk2
   /usr/lib/ocaml/lablgtk2/gAction.cmi
   /usr/lib/ocaml/lablgtk2/gAction.cmx
@@ -305,7 +305,6 @@ Files included in the binary package:
   /usr/lib/ocaml/lablgtk2/lablgtkspell.a
   /usr/lib/ocaml/lablgtk2/lablgtkspell.cma
   /usr/lib/ocaml/lablgtk2/lablgtkspell.cmxa
-  /usr/lib/ocaml/lablgtk2/lablgtktop.exe
   /usr/lib/ocaml/lablgtk2/lablpanel.a
   /usr/lib/ocaml/lablgtk2/lablpanel.cma
   /usr/lib/ocaml/lablgtk2/lablpanel.cmxa
@@ -341,23 +340,35 @@ Files included in the binary package:
   /usr/lib/ocaml/lablgtk2/pangoEnums.cmx
   /usr/lib/ocaml/lablgtk2/pangoEnums.ml
   /usr/lib/ocaml/lablgtk2/pango_tags.h
-  /usr/lib/ocaml/lablgtk2/propcc
+  /usr/lib/ocaml/lablgtk2/propcc.exe
   /usr/lib/ocaml/lablgtk2/rsvg.cmi
   /usr/lib/ocaml/lablgtk2/rsvg.cmx
   /usr/lib/ocaml/lablgtk2/rsvg.ml
   /usr/lib/ocaml/lablgtk2/rsvg.mli
-  /usr/lib/ocaml/lablgtk2/varcc
+  /usr/lib/ocaml/lablgtk2/varcc.exe
   /usr/lib/ocaml/lablgtk2/win32.h
   /usr/lib/ocaml/lablgtk2/wrappers.h
   /usr/lib/ocaml/lablgtk2/xml_lexer.mli
-  /usr/share/doc/Cygwin/lablgtk2-2.6.0.README
-  /usr/share/doc/lablgtk2-2.6.0/COPYING
-  /usr/share/doc/lablgtk2-2.6.0/Changes
-  /usr/share/doc/lablgtk2-2.6.0/README
+  /usr/lib/ocaml/stublibs/dlllablglade2.so
+  /usr/lib/ocaml/stublibs/dlllablgnomecanvas.so
+  /usr/lib/ocaml/stublibs/dlllablgnomeui.so
+  /usr/lib/ocaml/stublibs/dlllablgtk2.so
+  /usr/lib/ocaml/stublibs/dlllablgtkgl2.so
+  /usr/lib/ocaml/stublibs/dlllablgtkspell.so
+  /usr/lib/ocaml/stublibs/dlllablpanel.so
+  /usr/lib/ocaml/stublibs/dlllablrsvg.so
+  /usr/share/doc/Cygwin/lablgtk2-20060908.README
+  /usr/share/doc/lablgtk2-20060908/COPYING
+  /usr/share/doc/lablgtk2-20060908/Changes
+  /usr/share/doc/lablgtk2-20060908/README
+  /usr/share/doc/lablgtk2-20060908/html/*
 
 ------------------
 
 Port Notes:
+
+----- version 20060908-1 -----
+Snapshot version bump built for ocaml-3.09 with dynamic plugins.
 
 ----- version 2.6.0-1 -----
 Version bump.
