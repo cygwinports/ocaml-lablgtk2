@@ -1,4 +1,4 @@
 category: Gnome Interpreters
-requires: cygwin glib2 gnome-panel gtk2-x11 gtkglarea2 gtkspell libglade2 libgnome2 libgnomecanvas2 libgnomeui2 librsvg2 lablgl ocaml
+requires: cygwin glib2 gnome-panel gtk2-x11 gtkglarea2 gtksourceview gtkspell libglade2 libgnome2 libgnomecanvas2 libgnomeui2 librsvg2 lablgl ocaml
 sdesc: "Objective Caml bindings for GTK+2 and GNOME"
 ldesc: "Objective Caml bindings for GTK+2 and the GNOME 2.x libraries"

@@ -3,33 +3,34 @@ lablgtk2
 Objective Caml bindings for GTK2 and the GNOME 2.x libraries.
 
 Runtime requirements:
-  cygwin-1.5.24-2
-  gdk-pixbuf2-2.10.9-1
-  glib2-2.12.9-1
-  gnome-panel-2.16.2-1
-  gtk2-x11-2.10.9-1
+  cygwin-1.5.25-7
+  gdk-pixbuf2-2.12.3-1
+  glib2-2.14.4-1
+  gnome-panel-2.20.2-1
+  gtk2-x11-2.12.3-1
   gtkglarea2-1.99.0-1
-  gtkspell-2.0.11-2
-  lablgl-1.02-2
-  libglade2-2.6.0-1
-  libgnome2-2.16.0-1
-  libgnomecanvas2-2.14.0-1
-  libgnomeui2-2.16.1-1
-  librsvg2-2.16.1-1
-  pango-1.14.10-1
-  ocaml-3.08.1-1
+  gtksourceview-1.8.5-1
+  gtkspell-2.0.11-3
+  lablgl-1.03-1
+  libglade2-2.6.2-1
+  libgnome2-2.20.1.1-1
+  libgnomecanvas2-2.20.1.1-1
+  libgnomeui2-2.20.1.1-1
+  librsvg2-2.18.2-1
+  ocaml-3.09.3-1
+  pango-1.18.3-1
 
 Build requirements:
 (besides corresponding devel packages)
-  cygwin-1.5.19-4
-  binutils-20041229-1
-  cygport-0.1.92-1
-  gawk-3.1.5-2
-  gcc-core-3.4.4-1
-  make-3.80-1
-  pkg-config-0.20-1
-  sed-4.1.3-1
-  ocaml-3.08.1-1
+  cygwin-1.5.25-7
+  binutils-20060817-1
+  cygport-0.3.7-1
+  gawk-3.1.5-4
+  gcc-core-3.4.4-3
+  make-3.81-1
+  pkg-config-0.21-1
+  sed-4.1.5-4
+  ocaml-3.09.3-1
 
 Canonical homepage:
   http://wwwfun.kurims.kyoto-u.ac.jp/soft/olabl/lablgtk.html
@@ -40,15 +41,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack lablgtk2-20060908-X-src.tar.bz2
+  unpack lablgtk2-2.10.0-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./lablgtk2-20060908-X.cygport all
+  cygport ./lablgtk2-2.10.0-X.cygport all
 
 This will create:
-  /usr/src/lablgtk2-20060908-X-src.tar.bz2
-  /usr/src/lablgtk2-20060908-X.tar.bz2
+  /usr/src/lablgtk2-2.10.0-X-src.tar.bz2
+  /usr/src/lablgtk2-2.10.0-X.tar.bz2
 
 -------------------------------------------
 
@@ -61,6 +62,10 @@ Files included in the binary package:
   /usr/lib/ocaml/lablgtk2/gAction.cmx
   /usr/lib/ocaml/lablgtk2/gAction.ml
   /usr/lib/ocaml/lablgtk2/gAction.mli
+  /usr/lib/ocaml/lablgtk2/gAssistant.cmi
+  /usr/lib/ocaml/lablgtk2/gAssistant.cmx
+  /usr/lib/ocaml/lablgtk2/gAssistant.ml
+  /usr/lib/ocaml/lablgtk2/gAssistant.mli
   /usr/lib/ocaml/lablgtk2/gBin.cmi
   /usr/lib/ocaml/lablgtk2/gBin.cmx
   /usr/lib/ocaml/lablgtk2/gBin.ml
@@ -124,6 +129,10 @@ Files included in the binary package:
   /usr/lib/ocaml/lablgtk2/gRange.cmx
   /usr/lib/ocaml/lablgtk2/gRange.ml
   /usr/lib/ocaml/lablgtk2/gRange.mli
+  /usr/lib/ocaml/lablgtk2/gSourceView.cmi
+  /usr/lib/ocaml/lablgtk2/gSourceView.cmx
+  /usr/lib/ocaml/lablgtk2/gSourceView.ml
+  /usr/lib/ocaml/lablgtk2/gSourceView.mli
   /usr/lib/ocaml/lablgtk2/gText.cmi
   /usr/lib/ocaml/lablgtk2/gText.cmx
   /usr/lib/ocaml/lablgtk2/gText.ml
@@ -207,6 +216,9 @@ Files included in the binary package:
   /usr/lib/ocaml/lablgtk2/gtk.cmi
   /usr/lib/ocaml/lablgtk2/gtk.cmx
   /usr/lib/ocaml/lablgtk2/gtk.ml
+  /usr/lib/ocaml/lablgtk2/gtkAssistant.cmi
+  /usr/lib/ocaml/lablgtk2/gtkAssistant.cmx
+  /usr/lib/ocaml/lablgtk2/gtkAssistant.ml
   /usr/lib/ocaml/lablgtk2/gtkBase.cmi
   /usr/lib/ocaml/lablgtk2/gtkBase.cmx
   /usr/lib/ocaml/lablgtk2/gtkBase.ml
@@ -261,6 +273,10 @@ Files included in the binary package:
   /usr/lib/ocaml/lablgtk2/gtkSignal.cmx
   /usr/lib/ocaml/lablgtk2/gtkSignal.ml
   /usr/lib/ocaml/lablgtk2/gtkSignal.mli
+  /usr/lib/ocaml/lablgtk2/gtkSourceView.cmi
+  /usr/lib/ocaml/lablgtk2/gtkSourceView.cmx
+  /usr/lib/ocaml/lablgtk2/gtkSourceView.ml
+  /usr/lib/ocaml/lablgtk2/gtkSourceView_types.mli
   /usr/lib/ocaml/lablgtk2/gtkSpell.cmi
   /usr/lib/ocaml/lablgtk2/gtkSpell.cmx
   /usr/lib/ocaml/lablgtk2/gtkSpell.ml
@@ -302,6 +318,9 @@ Files included in the binary package:
   /usr/lib/ocaml/lablgtk2/lablgtkgl.a
   /usr/lib/ocaml/lablgtk2/lablgtkgl.cma
   /usr/lib/ocaml/lablgtk2/lablgtkgl.cmxa
+  /usr/lib/ocaml/lablgtk2/lablgtksourceview.a
+  /usr/lib/ocaml/lablgtk2/lablgtksourceview.cma
+  /usr/lib/ocaml/lablgtk2/lablgtksourceview.cmxa
   /usr/lib/ocaml/lablgtk2/lablgtkspell.a
   /usr/lib/ocaml/lablgtk2/lablgtkspell.cma
   /usr/lib/ocaml/lablgtk2/lablgtkspell.cmxa
@@ -316,15 +335,18 @@ Files included in the binary package:
   /usr/lib/ocaml/lablgtk2/liblablgnomeui.a
   /usr/lib/ocaml/lablgtk2/liblablgtk2.a
   /usr/lib/ocaml/lablgtk2/liblablgtkgl2.a
+  /usr/lib/ocaml/lablgtk2/liblablgtksourceview.a
   /usr/lib/ocaml/lablgtk2/liblablgtkspell.a
   /usr/lib/ocaml/lablgtk2/liblablpanel.a
   /usr/lib/ocaml/lablgtk2/liblablrsvg.a
+  /usr/lib/ocaml/lablgtk2/ml_domain.h
   /usr/lib/ocaml/lablgtk2/ml_gdk.h
   /usr/lib/ocaml/lablgtk2/ml_gdkpixbuf.h
   /usr/lib/ocaml/lablgtk2/ml_glib.h
   /usr/lib/ocaml/lablgtk2/ml_gobject.h
   /usr/lib/ocaml/lablgtk2/ml_gpointer.h
   /usr/lib/ocaml/lablgtk2/ml_gtk.h
+  /usr/lib/ocaml/lablgtk2/ml_gtktext.h
   /usr/lib/ocaml/lablgtk2/ml_gtktree.h
   /usr/lib/ocaml/lablgtk2/ml_gvaluecaml.h
   /usr/lib/ocaml/lablgtk2/ml_pango.h
@@ -345,6 +367,10 @@ Files included in the binary package:
   /usr/lib/ocaml/lablgtk2/rsvg.cmx
   /usr/lib/ocaml/lablgtk2/rsvg.ml
   /usr/lib/ocaml/lablgtk2/rsvg.mli
+  /usr/lib/ocaml/lablgtk2/sourceViewEnums.cmi
+  /usr/lib/ocaml/lablgtk2/sourceViewEnums.cmx
+  /usr/lib/ocaml/lablgtk2/sourceViewEnums.ml
+  /usr/lib/ocaml/lablgtk2/sourceView_tags.h
   /usr/lib/ocaml/lablgtk2/varcc.exe
   /usr/lib/ocaml/lablgtk2/win32.h
   /usr/lib/ocaml/lablgtk2/wrappers.h
@@ -354,18 +380,20 @@ Files included in the binary package:
   /usr/lib/ocaml/stublibs/dlllablgnomeui.so
   /usr/lib/ocaml/stublibs/dlllablgtk2.so
   /usr/lib/ocaml/stublibs/dlllablgtkgl2.so
+  /usr/lib/ocaml/stublibs/dlllablgtksourceview.so
   /usr/lib/ocaml/stublibs/dlllablgtkspell.so
   /usr/lib/ocaml/stublibs/dlllablpanel.so
   /usr/lib/ocaml/stublibs/dlllablrsvg.so
-  /usr/share/doc/Cygwin/lablgtk2-20060908.README
-  /usr/share/doc/lablgtk2-20060908/COPYING
-  /usr/share/doc/lablgtk2-20060908/Changes
-  /usr/share/doc/lablgtk2-20060908/README
-  /usr/share/doc/lablgtk2-20060908/html/*
+  /usr/share/doc/lablgtk2-2.10.0/COPYING
+  /usr/share/doc/lablgtk2-2.10.0/Changes
+  /usr/share/doc/lablgtk2-2.10.0/README
 
 ------------------
 
 Port Notes:
+
+----- version 2.10.0-1 -----
+Version bump.
 
 ----- version 20060908-1 -----
 Snapshot version bump built for ocaml-3.09 with dynamic plugins.
