@@ -1,0 +1,25 @@
+ORIG_PN="lablgtk"
+inherit ocaml
+
+DESCRIPTION="OCaml bindings for GTK+ and GNOME libraries"
+HOMEPAGE="http://wwwfun.kurims.kyoto-u.ac.jp/soft/olabl/lablgtk.html"
+SRC_URI="http://wwwfun.kurims.kyoto-u.ac.jp/soft/olabl/dist/${ORIG_PN}-${PV}.tar.gz"
+
+src_compile() {
+	cd ${S}
+	cygautoreconf
+	lndirs
+
+	cd ${B}
+	cygconf
+	cygmake -j1 all opt XE=.exe
+}
+
+src_install() {
+	cd ${B}
+	dodir ${OCAML_LIBDIR}
+	cyginstall -j1
+
+	insinto ${OCAML_LIBDIR}/lablgtk2
+	doins META
+}
