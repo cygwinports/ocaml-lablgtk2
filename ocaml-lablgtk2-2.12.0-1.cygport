@@ -4,6 +4,8 @@ inherit ocaml
 DESCRIPTION="OCaml bindings for GTK+ and GNOME libraries"
 HOMEPAGE="http://wwwfun.kurims.kyoto-u.ac.jp/soft/olabl/lablgtk.html"
 SRC_URI="http://wwwfun.kurims.kyoto-u.ac.jp/soft/olabl/dist/${ORIG_PN}-${PV}.tar.gz"
+PATCH_URI="2.12-gdk-x11.patch
+           2.12-gnome-panel-2.26.patch"
 
 src_compile() {
 	cd ${S}
@@ -12,7 +14,7 @@ src_compile() {
 
 	cd ${B}
 	cygconf
-	cygmake -j1 all opt XE=.exe
+	cygmake -j1 all opt EXE=.exe XE=.exe
 }
 
 src_install() {
