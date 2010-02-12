@@ -1,4 +1,4 @@
 category: Gnome OCaml
-requires: libgcc1 libgdk_pixbuf2.0-devel libglade2.0-devel libglib2.0-devel libgnome2-devel libgnomecanvas2-devel libgnomeui2-devel libgtk2.0-devel libgtkgl2.0-devel libgtksourceview1.0-devel libgtkspell-devel libpanel-applet2-devel libpango1.0-devel librsvg2-devel ocaml ocaml-lablgl
+requires: libgcc1 libgdk_pixbuf2.0-devel libglade2.0-devel libglib2.0-devel libgnome2-devel libgnomecanvas2-devel libgnomeui2-devel libgtk2.0-devel libgtkgl2.0-devel libgtksourceview2.0-devel libgtkspell-devel libpango1.0-devel librsvg2-devel ocaml ocaml-lablgl
 sdesc: "OCaml bindings for GNOME libraries"
 ldesc: "Objective Caml bindings for GTK+2 and the GNOME 2.x libraries"
