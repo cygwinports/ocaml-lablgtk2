@@ -16,8 +16,8 @@ Runtime requirements:
   libgtkspell0-2.0.15-11
   libpango1.0_0-1.26.2-1
   librsvg2_2-2.26.0-2
-  ocaml-3.11.1-1
-  ocaml-lablgl-1.04-1
+  ocaml-3.11.2-1
+  ocaml-lablgl-1.04-2
 
 Build requirements:
 (besides corresponding devel packages)
@@ -50,10 +50,21 @@ Build instructions:
 This will create:
   /usr/src/ocaml-lablgtk2-2.14.0-X-src.tar.bz2
   /usr/src/ocaml-lablgtk2-2.14.0-X.tar.bz2
+  /usr/src/ocaml-lablglade2-2.14.0-X.tar.bz2
+  /usr/src/ocaml-lablgnomecanvas-2.14.0-X.tar.bz2
+  /usr/src/ocaml-lablgnomeui-2.14.0-X.tar.bz2
+  /usr/src/ocaml-lablgtkgl2-2.14.0-X.tar.bz2
+  /usr/src/ocaml-lablgtksourceview2-2.14.0-X.tar.bz2
+  /usr/src/ocaml-lablgtkspell-2.14.0-X.tar.bz2
+  /usr/src/ocaml-lablrsvg-2.14.0-X.tar.bz2
 
 -------------------------------------------
 
 Port Notes:
+
+----- version 2.14.0-2 -----
+Rebuilt for ocaml-3.11.2.
+Split out extra bindings into separate packages.
 
 ----- version 2.14.0-1 -----
 Version bump.

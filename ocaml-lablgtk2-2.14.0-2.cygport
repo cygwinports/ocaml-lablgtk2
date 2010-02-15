@@ -1,0 +1,47 @@
+ORIG_PN="lablgtk"
+inherit ocaml
+
+DESCRIPTION="OCaml bindings for GTK+ and GNOME libraries"
+HOMEPAGE="http://wwwfun.kurims.kyoto-u.ac.jp/soft/olabl/lablgtk.html"
+SRC_URI="http://wwwfun.kurims.kyoto-u.ac.jp/soft/olabl/dist/${ORIG_PN}-${PV}.tar.gz"
+PATCH_URI="
+	mirror://portage/dev-ml/lablgtk/files/lablgtk-2.14.0-sourceview2.patch
+	2.12-gdk-x11.patch
+	2.14.0-extralibs-optional.patch
+"
+
+PKG_NAMES="${PN} ocaml-lablglade2 ocaml-lablgnomecanvas ocaml-lablgnomeui
+           ocaml-lablgtkgl2 ocaml-lablgtksourceview2 ocaml-lablgtkspell
+           ocaml-lablrsvg"
+PKG_HINTS="${PKG_NAMES//ocaml-labl/}"
+ocaml_lablgtk2_CONTENTS="--exclude=*glade* --exclude=glGtk.* --exclude=*gtkgl*
+		--exclude=*anvas* --exclude=*ruid* --exclude=*gnomeui* --exclude=*panel*
+		--exclude=*pell* --exclude=*iew* --exclude=*rsvg* usr/"
+ocaml_lablglade2_CONTENTS="usr/bin/lablglade* ${OCAML_LIBDIR#/}/*/*glade*"
+ocaml_lablgtkgl2_CONTENTS="${OCAML_LIBDIR#/}/*/*glGtk.* ${OCAML_LIBDIR#/}/*/*gtkgl*"
+ocaml_lablgnomecanvas_CONTENTS="${OCAML_LIBDIR#/}/*/*anvas*"
+ocaml_lablgnomeui_CONTENTS="${OCAML_LIBDIR#/}/*/*ruid* ${OCAML_LIBDIR#/}/*/*gnomeui*"
+#ocaml_lablgtksourceview_CONTENTS="--exclude=*iew2* ${OCAML_LIBDIR#/}/*/*iew*"
+ocaml_lablgtksourceview2_CONTENTS="${OCAML_LIBDIR#/}/*/*iew2*"
+ocaml_lablgtkspell_CONTENTS="${OCAML_LIBDIR#/}/*/*pell*"
+#ocaml_lablpanel_CONTENTS="${OCAML_LIBDIR#/}/*/*panel*"
+ocaml_lablrsvg_CONTENTS="${OCAML_LIBDIR#/}/*/*rsvg*"
+
+src_compile() {
+	cd ${S}
+	cygautoreconf
+	lndirs
+
+	cd ${B}
+	cygconf --without-gtksourceview --without-panel --without-quartz
+	cygmake -j1 all opt doc EXE=.exe XE=.exe
+}
+
+src_install() {
+	cd ${B}
+	dodir ${OCAML_LIBDIR}
+	cyginstall -j1
+
+	insinto ${OCAML_LIBDIR}/lablgtk2
+	doins META src/lablgtk.odoc
+}

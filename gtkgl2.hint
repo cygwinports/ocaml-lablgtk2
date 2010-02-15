@@ -1,0 +1,5 @@
+category: Gnome OCaml
+requires: libgtkgl2.0-devel ocaml ocaml-lablgl ocaml-lablgtk2
+external-source: ocaml-lablgtk2
+sdesc: "OCaml bindings for GtkGLArea"
+ldesc: "Objective Caml bindings for GTK+2 and the GNOME 2.x libraries"
