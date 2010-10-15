@@ -3,34 +3,34 @@ ocaml-lablgtk2
 Objective Caml bindings for GTK2 and the GNOME 2.x libraries.
 
 Runtime requirements:
-  cygwin-1.7.1-1
-  libgcc1-4.3.4-3
-  libgdk_pixbuf2.0_0-2.18.6-1
+  cygwin-1.7.7-1
+  libgcc1-4.5.0-1
+  libgdk_pixbuf2.0_0-2.20.1-1
   libglade2.0_0-2.6.4-1
-  libglib2.0_0-2.22.4-2
-  libgnomecanvas2_0-2.26.0-1
-  libgnomeui2_0-2.24.2-1
-  libgtk2.0_0-2.18.6-1
+  libglib2.0_0-2.24.1-1
+  libgnomecanvas2_0-2.30.1-1
+  libgnomeui2_0-2.24.3-1
+  libgtk2.0_0-2.20.1-1
   libgtkgl2.0_1-2.0.1-1
-  libgtksourceview2.0_0-2.8.2-1
-  libgtkspell0-2.0.15-11
-  libpango1.0_0-1.26.2-1
-  librsvg2_2-2.26.0-2
-  ocaml-3.11.2-1
-  ocaml-lablgl-1.04-2
+  libgtksourceview2.0_0-2.10.4-1
+  libgtkspell0-2.0.16-1
+  libpango1.0_0-1.28.1-2
+  librsvg2_2-2.26.3-1
+  ocaml-3.12.0-1
+  ocaml-lablgl-1.04-3
 
 Build requirements:
 (besides corresponding devel packages)
   autoconf2.5-2.65-1
   automake1.11-1.11.1-1
-  binutils-2.19.51-1
-  cygport-0.9.80-1
-  flexdll-0.20-1
+  binutils-2.20.51-2
+  cygport-0.10.0-1
+  flexdll-0.25-1
   gawk-3.1.7-1
-  gcc4-core-4.3.4-3
+  gcc4-core-4.5.0-1
   make-3.81-2
   pkg-config-0.23b-10
-  sed-4.1.5-2
+  sed-4.2.1-1
 
 Canonical homepage:
   http://wwwfun.kurims.kyoto-u.ac.jp/soft/olabl/lablgtk.html
@@ -41,26 +41,29 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack ocaml-lablgtk2-2.14.0-X-src.tar.bz2
+  unpack ocaml-lablgtk2-2.14.2-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./ocaml-lablgtk2-2.14.0-X.cygport all
+  cygport ./ocaml-lablgtk2-2.14.2-X.cygport all
 
 This will create:
-  /usr/src/ocaml-lablgtk2-2.14.0-X-src.tar.bz2
-  /usr/src/ocaml-lablgtk2-2.14.0-X.tar.bz2
-  /usr/src/ocaml-lablglade2-2.14.0-X.tar.bz2
-  /usr/src/ocaml-lablgnomecanvas-2.14.0-X.tar.bz2
-  /usr/src/ocaml-lablgnomeui-2.14.0-X.tar.bz2
-  /usr/src/ocaml-lablgtkgl2-2.14.0-X.tar.bz2
-  /usr/src/ocaml-lablgtksourceview2-2.14.0-X.tar.bz2
-  /usr/src/ocaml-lablgtkspell-2.14.0-X.tar.bz2
-  /usr/src/ocaml-lablrsvg-2.14.0-X.tar.bz2
+  /usr/src/ocaml-lablgtk2-2.14.2-X-src.tar.bz2
+  /usr/src/ocaml-lablgtk2-2.14.2-X.tar.bz2
+  /usr/src/ocaml-lablglade2-2.14.2-X.tar.bz2
+  /usr/src/ocaml-lablgnomecanvas-2.14.2-X.tar.bz2
+  /usr/src/ocaml-lablgnomeui-2.14.2-X.tar.bz2
+  /usr/src/ocaml-lablgtkgl2-2.14.2-X.tar.bz2
+  /usr/src/ocaml-lablgtksourceview2-2.14.2-X.tar.bz2
+  /usr/src/ocaml-lablgtkspell-2.14.2-X.tar.bz2
+  /usr/src/ocaml-lablrsvg-2.14.2-X.tar.bz2
 
 -------------------------------------------
 
 Port Notes:
+
+----- version 2.14.2-1 -----
+Version bump, built for OCaml 3.12.0.
 
 ----- version 2.14.0-2 -----
 Rebuilt for ocaml-3.11.2.
