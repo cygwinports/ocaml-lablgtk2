@@ -2,8 +2,8 @@ ORIG_PN="lablgtk"
 inherit ocaml
 
 DESCRIPTION="OCaml bindings for GTK+ and GNOME libraries"
-HOMEPAGE="http://wwwfun.kurims.kyoto-u.ac.jp/soft/olabl/lablgtk.html"
-SRC_URI="http://wwwfun.kurims.kyoto-u.ac.jp/soft/olabl/dist/${ORIG_PN}-${PV}.tar.gz"
+HOMEPAGE="http://lablgtk.forge.ocamlcore.org/"
+SRC_URI="https://forge.ocamlcore.org/frs/download.php/561/${ORIG_PN}-${PV}.tar.gz"
 
 PATCH_URI="
 	2.12-gdk-x11.patch
