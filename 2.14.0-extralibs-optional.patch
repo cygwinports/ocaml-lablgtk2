@@ -3,9 +3,9 @@ Allow lablgtk2 to run without requiring all extra libraries to be installed.
 --- origsrc/lablgtk-2.14.0/src/Makefile	2010-02-14 13:37:41.101228500 -0600
 +++ src/lablgtk-2.14.0/src/Makefile	2010-02-14 18:13:20.669237700 -0600
 @@ -267,7 +267,7 @@ lablgtk2: Makefile $(CONFIG) lablgtk2.in
+ lablgtk2: Makefile $(CONFIG) lablgtk2.in
  	sed -e "s|@INSTALLDIR@|$(INSTALLDIR)|g" \
  	    -e "s|@LABLGLDIR@|$(LABLGLDIR)|g" \
- 	    -e "s|@LIBDIR@|$(LIBDIR)|g" \
 -	    -e "s|@MLLIBS@|$(MLLINK) $(MLLIBS)|g" \
 +	    -e "s|@MLLIBS@|$(MLLIBS)|g" \
  	    -e "s|@INITOBJS@|$(INITOBJS)|g" \

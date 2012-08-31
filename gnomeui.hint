@@ -1,5 +1,0 @@
-category: Gnome OCaml
-requires: libgnome2_0 libgnome2-devel libgnomeui2_0 libgnomeui2-devel ocaml-base ocaml-lablgnomecanvas ocaml-lablgtk2
-external-source: ocaml-lablgtk2
-sdesc: "OCaml bindings for LibGnome/UI"
-ldesc: "Objective Caml bindings for GTK+2 and the GNOME 2.x libraries"

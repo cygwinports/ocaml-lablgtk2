@@ -1,4 +1,0 @@
-category: Gnome OCaml
-requires: libgcc1 libgdk_pixbuf2.0_0 libgdk_pixbuf2.0-devel libglib2.0_0 libglib2.0-devel libgtk2.0_0 libgtk2.0-devel libpango1.0_0 libpango1.0-devel ocaml-base
-sdesc: "OCaml bindings for GTK+"
-ldesc: "Objective Caml bindings for GTK+2 and the GNOME 2.x libraries"

@@ -1,5 +1,0 @@
-category: Gnome OCaml
-requires: libgtkspell0 libgtkspell-devel ocaml-base ocaml-lablgtk2
-external-source: ocaml-lablgtk2
-sdesc: "OCaml bindings for GtkSpell"
-ldesc: "Objective Caml bindings for GTK+2 and the GNOME 2.x libraries"

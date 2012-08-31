@@ -1,5 +1,0 @@
-category: Gnome OCaml
-requires: libgtksourceview2.0_0 libgtksourceview2.0-devel ocaml-base ocaml-lablgtk2
-external-source: ocaml-lablgtk2
-sdesc: "OCaml bindings for GtkSourceView 2"
-ldesc: "Objective Caml bindings for GTK+2 and the GNOME 2.x libraries"

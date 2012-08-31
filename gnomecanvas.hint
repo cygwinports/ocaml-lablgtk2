@@ -1,5 +1,0 @@
-category: Gnome OCaml
-requires: libgnomecanvas2_0 libgnomecanvas2-devel ocaml-base ocaml-lablgtk2
-external-source: ocaml-lablgtk2
-sdesc: "OCaml bindings for GnomeCanvas"
-ldesc: "Objective Caml bindings for GTK+2 and the GNOME 2.x libraries"

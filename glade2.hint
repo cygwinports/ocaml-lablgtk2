@@ -1,5 +1,0 @@
-category: Gnome OCaml
-requires: libglade2.0_0 libglade2.0-devel ocaml-base ocaml-lablgtk2
-external-source: ocaml-lablgtk2
-sdesc: "OCaml bindings for LibGlade"
-ldesc: "Objective Caml bindings for GTK+2 and the GNOME 2.x libraries"

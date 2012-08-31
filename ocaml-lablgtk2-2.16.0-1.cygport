@@ -1,9 +1,14 @@
 ORIG_PN="lablgtk"
 inherit ocaml
 
-DESCRIPTION="OCaml bindings for GTK+ and GNOME libraries"
+CATEGORY="OCaml"
+SUMMARY="OCaml bindings for GTK+"
+DESCRIPTION="LablGtk provides a strongly-typed, yet comfortable,
+object-oriented interface compatible with GTK+'s dynamic typing through
+OCaml's rich type system. Most widgets and methods are available, along
+with many examples."
 HOMEPAGE="http://lablgtk.forge.ocamlcore.org/"
-SRC_URI="https://forge.ocamlcore.org/frs/download.php/561/${ORIG_PN}-${PV}.tar.gz"
+SRC_URI="https://forge.ocamlcore.org/frs/download.php/979/${ORIG_PN}-${PV}.tar.gz"
 
 PATCH_URI="
 	2.12-gdk-x11.patch
@@ -13,18 +18,29 @@ PATCH_URI="
 PKG_NAMES="${PN} ocaml-lablglade2 ocaml-lablgnomecanvas ocaml-lablgnomeui
            ocaml-lablgtkgl2 ocaml-lablgtksourceview2 ocaml-lablgtkspell
            ocaml-lablrsvg"
-PKG_HINTS="${PKG_NAMES//ocaml-labl/}"
 ocaml_lablgtk2_CONTENTS="--exclude=*glade* --exclude=glGtk.* --exclude=*gtkgl*
 		--exclude=*anvas* --exclude=*ruid* --exclude=*gnomeui* --exclude=*panel*
 		--exclude=*pell* --exclude=*iew* --exclude=*rsvg* usr/"
+ocaml_lablglade2_SUMMARY="OCaml bindings for LibGlade"
+ocaml_lablglade2_REQUIRES=${PN}
 ocaml_lablglade2_CONTENTS="usr/bin/lablglade* ${OCAML_LIBDIR#/}/*/*glade*"
+ocaml_lablgtkgl2_SUMMARY="OCaml bindings for GtkGLArea"
+ocaml_lablgtkgl2_REQUIRES="${PN} ocaml-lablgl"
 ocaml_lablgtkgl2_CONTENTS="${OCAML_LIBDIR#/}/*/*glGtk.* ${OCAML_LIBDIR#/}/*/*gtkgl*"
+ocaml_lablgnomecanvas_SUMMARY="OCaml bindings for GnomeCanvas"
+ocaml_lablgnomecanvas_REQUIRES=${PN}
 ocaml_lablgnomecanvas_CONTENTS="${OCAML_LIBDIR#/}/*/*anvas*"
+ocaml_lablgnomeui_SUMMARY="OCaml bindings for LibGnome/UI"
+ocaml_lablgnomeui_REQUIRES=${PN}
 ocaml_lablgnomeui_CONTENTS="${OCAML_LIBDIR#/}/*/*ruid* ${OCAML_LIBDIR#/}/*/*gnomeui*"
-#ocaml_lablgtksourceview_CONTENTS="--exclude=*iew2* ${OCAML_LIBDIR#/}/*/*iew*"
+ocaml_lablgtksourceview2_SUMMARY="OCaml bindings for GtkSourceView 2"
+ocaml_lablgtksourceview2_REQUIRES=${PN}
 ocaml_lablgtksourceview2_CONTENTS="${OCAML_LIBDIR#/}/*/*iew2*"
+ocaml_lablgtkspell_SUMMARY="OCaml bindings for GtkSpell"
+ocaml_lablgtkspell_REQUIRES=${PN}
 ocaml_lablgtkspell_CONTENTS="${OCAML_LIBDIR#/}/*/*pell*"
-#ocaml_lablpanel_CONTENTS="${OCAML_LIBDIR#/}/*/*panel*"
+ocaml_lablrsvg_SUMMARY="OCaml bindings for RSVG"
+ocaml_lablrsvg_REQUIRES=${PN}
 ocaml_lablrsvg_CONTENTS="${OCAML_LIBDIR#/}/*/*rsvg*"
 
 src_compile() {
@@ -39,8 +55,7 @@ src_compile() {
 
 src_install() {
 	cd ${B}
-	dodir ${OCAML_LIBDIR}
-	cyginstall -j1
+	ocaml_install RANLIB=:
 
 	insinto ${OCAML_LIBDIR}/lablgtk2
 	doins META src/lablgtk.odoc
