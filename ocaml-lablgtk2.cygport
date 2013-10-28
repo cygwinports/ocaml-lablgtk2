@@ -2,8 +2,8 @@ ORIG_PN="lablgtk"
 inherit ocaml
 
 NAME="ocaml-lablgtk2"
-VERSION=2.16.0
-RELEASE=2
+VERSION=2.18.0
+RELEASE=1
 CATEGORY="OCaml"
 SUMMARY="OCaml bindings for GTK+"
 DESCRIPTION="LablGtk provides a strongly-typed, yet comfortable,
@@ -11,14 +11,14 @@ object-oriented interface compatible with GTK+'s dynamic typing through
 OCaml's rich type system. Most widgets and methods are available, along
 with many examples."
 HOMEPAGE="http://lablgtk.forge.ocamlcore.org/"
-SRC_URI="https://forge.ocamlcore.org/frs/download.php/979/${ORIG_PN}-${PV}.tar.gz"
+SRC_URI="https://forge.ocamlcore.org/frs/download.php/1261/${ORIG_PN}-${PV}.tar.gz"
 
 PATCH_URI="
 	2.12-gdk-x11.patch
 	2.14.0-extralibs-optional.patch
 "
 
-PKG_NAMES="${PN} ocaml-lablglade2 ocaml-lablgnomecanvas ocaml-lablgnomeui
+PKG_NAMES="${NAME} ocaml-lablglade2 ocaml-lablgnomecanvas ocaml-lablgnomeui
            ocaml-lablgtkgl2 ocaml-lablgtksourceview2 ocaml-lablgtkspell
            ocaml-lablrsvg"
 ocaml_lablgtk2_CONTENTS="--exclude=*glade* --exclude=glGtk.* --exclude=*gtkgl*
@@ -59,7 +59,8 @@ src_compile() {
 src_install() {
 	cd ${B}
 	ocaml_install RANLIB=:
+	rm -f ${D}/usr/lib/ocaml/ld.conf
 
 	insinto ${OCAML_LIBDIR}/lablgtk2
-	doins META src/lablgtk.odoc
+	doins src/lablgtk.odoc
 }
