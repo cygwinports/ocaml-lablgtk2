@@ -4,7 +4,7 @@ inherit ocaml
 NAME="ocaml-lablgtk2"
 VERSION=2.18.0
 RELEASE=1
-CATEGORY="OCaml"
+CATEGORY="Libs"
 SUMMARY="OCaml bindings for GTK+"
 DESCRIPTION="LablGtk provides a strongly-typed, yet comfortable,
 object-oriented interface compatible with GTK+'s dynamic typing through
