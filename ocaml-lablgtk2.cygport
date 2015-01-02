@@ -1,8 +1,7 @@
-ORIG_PN="lablgtk"
 inherit ocaml
 
 NAME="ocaml-lablgtk2"
-VERSION=2.18.0
+VERSION=2.18.3
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="OCaml bindings for GTK+"
@@ -11,8 +10,8 @@ object-oriented interface compatible with GTK+'s dynamic typing through
 OCaml's rich type system. Most widgets and methods are available, along
 with many examples."
 HOMEPAGE="http://lablgtk.forge.ocamlcore.org/"
-SRC_URI="https://forge.ocamlcore.org/frs/download.php/1261/${ORIG_PN}-${PV}.tar.gz"
-
+SRC_URI="https://forge.ocamlcore.org/frs/download.php/1479/lablgtk-${VERSION}.tar.gz"
+SRC_DIR="lablgtk-${VERSION}"
 PATCH_URI="
 	2.12-gdk-x11.patch
 	2.14.0-extralibs-optional.patch
