@@ -1,7 +1,7 @@
 inherit ocaml
 
 NAME="ocaml-lablgtk2"
-VERSION=2.18.3
+VERSION=2.18.5
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="OCaml bindings for GTK+"
@@ -10,11 +10,12 @@ object-oriented interface compatible with GTK+'s dynamic typing through
 OCaml's rich type system. Most widgets and methods are available, along
 with many examples."
 HOMEPAGE="http://lablgtk.forge.ocamlcore.org/"
-SRC_URI="https://forge.ocamlcore.org/frs/download.php/1479/lablgtk-${VERSION}.tar.gz"
+SRC_URI="https://forge.ocamlcore.org/frs/download.php/1627/lablgtk-${VERSION}.tar.gz"
 SRC_DIR="lablgtk-${VERSION}"
 PATCH_URI="
 	2.12-gdk-x11.patch
 	2.14.0-extralibs-optional.patch
+	2.18.5-flexlink.patch
 "
 
 PKG_NAMES="${NAME} ocaml-lablglade2 ocaml-lablgnomecanvas ocaml-lablgnomeui
@@ -24,26 +25,32 @@ ocaml_lablgtk2_CONTENTS="--exclude=*glade* --exclude=glGtk.* --exclude=*gtkgl*
 		--exclude=*anvas* --exclude=*ruid* --exclude=*gnomeui* --exclude=*panel*
 		--exclude=*pell* --exclude=*iew* --exclude=*rsvg* usr/"
 ocaml_lablglade2_SUMMARY="OCaml bindings for LibGlade"
-ocaml_lablglade2_REQUIRES=${PN}
+ocaml_lablglade2_REQUIRES="ocaml ${NAME}"
 ocaml_lablglade2_CONTENTS="usr/bin/lablglade* ${OCAML_LIBDIR#/}/*/*glade*"
 ocaml_lablgtkgl2_SUMMARY="OCaml bindings for GtkGLArea"
-ocaml_lablgtkgl2_REQUIRES="${PN} ocaml-lablgl"
+ocaml_lablgtkgl2_REQUIRES="ocaml ${NAME} ocaml-lablgl"
 ocaml_lablgtkgl2_CONTENTS="${OCAML_LIBDIR#/}/*/*glGtk.* ${OCAML_LIBDIR#/}/*/*gtkgl*"
 ocaml_lablgnomecanvas_SUMMARY="OCaml bindings for GnomeCanvas"
-ocaml_lablgnomecanvas_REQUIRES=${PN}
+ocaml_lablgnomecanvas_REQUIRES="ocaml ${NAME}"
 ocaml_lablgnomecanvas_CONTENTS="${OCAML_LIBDIR#/}/*/*anvas*"
 ocaml_lablgnomeui_SUMMARY="OCaml bindings for LibGnome/UI"
-ocaml_lablgnomeui_REQUIRES=${PN}
+ocaml_lablgnomeui_REQUIRES="ocaml ${NAME}"
 ocaml_lablgnomeui_CONTENTS="${OCAML_LIBDIR#/}/*/*ruid* ${OCAML_LIBDIR#/}/*/*gnomeui*"
 ocaml_lablgtksourceview2_SUMMARY="OCaml bindings for GtkSourceView 2"
-ocaml_lablgtksourceview2_REQUIRES=${PN}
+ocaml_lablgtksourceview2_REQUIRES="ocaml ${NAME}"
 ocaml_lablgtksourceview2_CONTENTS="${OCAML_LIBDIR#/}/*/*iew2*"
 ocaml_lablgtkspell_SUMMARY="OCaml bindings for GtkSpell"
-ocaml_lablgtkspell_REQUIRES=${PN}
+ocaml_lablgtkspell_REQUIRES="ocaml ${NAME}"
 ocaml_lablgtkspell_CONTENTS="${OCAML_LIBDIR#/}/*/*pell*"
 ocaml_lablrsvg_SUMMARY="OCaml bindings for RSVG"
-ocaml_lablrsvg_REQUIRES=${PN}
+ocaml_lablrsvg_REQUIRES="ocaml ${NAME}"
 ocaml_lablrsvg_CONTENTS="${OCAML_LIBDIR#/}/*/*rsvg*"
+# obsolete bits from GtkSourceView 1.x and GNOME Panel 2.x (disabled below)
+PKG_IGNORE="
+	${OCAML_LIBDIR#/}/lablgtk2/gSourceView.mli
+	${OCAML_LIBDIR#/}/lablgtk2/gtkSourceView_types.mli
+	${OCAML_LIBDIR#/}/lablgtk2/panel.mli
+"
 
 src_compile() {
 	cd ${S}

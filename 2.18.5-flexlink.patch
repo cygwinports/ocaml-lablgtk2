@@ -1,0 +1,16 @@
+Apparently (at least on x86_64) the flexlink symbol table may be too big;
+attempting to use dlllablgtk2.so results in ENOEXEC.  The binary works fine
+when stripped, however, and as we don't get debuginfo from ocaml anyway,
+this is a workaround.
+
+--- origsrc/lablgtk-2.18.5/src/Makefile	2017-03-27 12:38:45.231085800 -0500
++++ src/lablgtk-2.18.5/src/Makefile	2017-03-27 12:52:32.685771500 -0500
+@@ -462,7 +462,7 @@ findlib-uninstall:
+ 	  do rm -f "$(BINDIR)"/$$f; done
+ 
+ lablgtk.cma liblablgtk2$(XA): $(COBJS) $(MLOBJS)
+-	$(LIBRARIAN) -o lablgtk -oc lablgtk2 $^ $(GTKLIBS)
++	$(LIBRARIAN) -o lablgtk -oc lablgtk2 $^ $(GTKLIBS) -ldopt -Wl,-s
+ lablgtk.cmxa: $(COBJS) $(MLOBJS:.cmo=.cmx)
+ 	$(LIBRARIAN) -o lablgtk -oc lablgtk2 $^ $(GTKLIBS)
+ lablgtk.cmxs: DYNLINKLIBS=$(GTK_LIBS)
